@@ -1,4 +1,4 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, OnInit, Input } from '@angular/core';
 
 @Component({
   selector: 'app-carousel',
@@ -11,5 +11,8 @@ export class CarouselComponent implements OnInit {
 
   ngOnInit(): void {
   }
+
+  // data="./assets/banner-item-01.jpg";
+  @Input() message: string;
 
 }
