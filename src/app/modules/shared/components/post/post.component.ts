@@ -1,4 +1,4 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, OnInit, Input } from '@angular/core';
 
 @Component({
   selector: 'app-post',
@@ -11,5 +11,17 @@ export class PostComponent implements OnInit {
 
   ngOnInit(): void {
   }
+
+  @Input() image:string;
+  @Input() title:string;
+  @Input() heading:string;
+  @Input() user:string;
+  @Input() date:string;
+  @Input() comments:string;
+  @Input() description:string;
+  @Input() tag1:string;
+  @Input() tag2:string;
+  @Input() tag3:string;
+  @Input() tag4:string;
 
 }

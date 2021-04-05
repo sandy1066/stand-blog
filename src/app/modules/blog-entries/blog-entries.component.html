@@ -1,1 +1,106 @@
-<p>blog-entries works!</p>
+<div class="w-full h-80">
+    <app-module-banner 
+        title="RECENT POSTS"
+        heading="OUR RECENT BLOG ENTRIES">
+    </app-module-banner>
+</div>
+
+<div class="my-6"><app-template-banner></app-template-banner></div>
+
+<div class="flex py-20">
+    <div class="pl-2.5 w-3/5 grid grid-cols-1 gap-8">
+        <div class="flex justify-end -space-x-14">
+            <div class="w-post">
+                <app-post 
+                    image="./assets/blog-thumb-01.jpg"
+                    title="lifestyle"
+                    heading="Donec Tincidunt Leo"
+                    user="Admin"
+                    date="May 31,2020"
+                    comments="12 Comments"
+                    description="Nullam nibh mi, tincidunt sed sapien ut, rutrum hendrerit velit. Integer auctor a mauris sit amet eleifend."
+                    tag1="Beauty"
+                    tag2="Nature">
+                </app-post>
+            </div>
+            <div class="w-post">
+                <app-post 
+                    image="./assets/blog-thumb-02.jpg"
+                    title="lifestyle"
+                    heading="Suspendisse Et Metus"
+                    user="Admin"
+                    date="May 22,2020"
+                    comments="26 Comments"
+                    description="Nullam nibh mi, tincidunt sed sapien ut, rutrum hendrerit velit. Integer auctor a mauris sit amet eleifend."
+                    tag1="Beauty"
+                    tag2="Nature">
+                </app-post>
+            </div>
+        </div>
+        <div class="flex justify-end -space-x-14">
+            <div class="w-post">
+                <app-post 
+                    image="./assets/blog-thumb-03.jpg"
+                    title="lifestyle"
+                    heading="Donec Tincidunt Leo"
+                    user="Admin"
+                    date="May 31,2020"
+                    comments="12 Comments"
+                    description="Nullam nibh mi, tincidunt sed sapien ut, rutrum hendrerit velit. Integer auctor a mauris sit amet eleifend."
+                    tag1="Beauty"
+                    tag2="Nature">
+                </app-post>
+            </div>
+            <div class="w-post">
+                <app-post 
+                    image="./assets/blog-thumb-04.jpg"
+                    title="lifestyle"
+                    heading="Suspendisse Et Metus"
+                    user="Admin"
+                    date="May 22,2020"
+                    comments="26 Comments"
+                    description="Nullam nibh mi, tincidunt sed sapien ut, rutrum hendrerit velit. Integer auctor a mauris sit amet eleifend."
+                    tag1="Beauty"
+                    tag2="Nature">
+                </app-post>
+            </div>
+        </div>
+        <div class="flex justify-end -space-x-14">
+            <div class="w-post">
+                <app-post 
+                    image="./assets/blog-thumb-05.jpg"
+                    title="lifestyle"
+                    heading="Donec Tincidunt Leo"
+                    user="Admin"
+                    date="May 31,2020"
+                    comments="12 Comments"
+                    description="Nullam nibh mi, tincidunt sed sapien ut, rutrum hendrerit velit. Integer auctor a mauris sit amet eleifend."
+                    tag1="Beauty"
+                    tag2="Nature">
+                </app-post>
+            </div>
+            <div class="w-post">
+                <app-post 
+                    image="./assets/blog-thumb-06.jpg"
+                    title="lifestyle"
+                    heading="Suspendisse Et Metus"
+                    user="Admin"
+                    date="May 22,2020"
+                    comments="26 Comments"
+                    description="Nullam nibh mi, tincidunt sed sapien ut, rutrum hendrerit velit. Integer auctor a mauris sit amet eleifend."
+                    tag1="Beauty"
+                    tag2="Nature">
+                </app-post>
+            </div>
+        </div>
+
+        <div><app-page-number></app-page-number></div>
+    </div>
+
+    <div class="grid grid-cols-1 gap-12 pl-14 w-2/5 h-1/2 float-right">
+        <div><app-post-search></app-post-search></div>
+        <div><app-recent-post></app-recent-post></div>
+        <div><app-categories></app-categories></div>
+        <div><app-tag-clouds></app-tag-clouds></div>
+    </div>
+</div>

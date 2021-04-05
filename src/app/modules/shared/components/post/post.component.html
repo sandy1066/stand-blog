@@ -1,1 +1,26 @@
-<p>post works!</p>
+<div class="w-4/5 float-right border border-gray-200">
+    <img [src]="image">
+    <div class="m-10">
+        <h2 class="uppercase text-orange-400 font-bold text-xl ">{{title}}</h2>
+        <div class="font-bold text-xl text-gray-800 leading-10"><a href="#">{{heading}}</a></div>
+        <div class="font-medium text-sm text-gray-400"><a href="#" class="hover:text-orange-400">{{user}}</a> | <a href="#" class="hover:text-orange-400">{{date}}</a> | <a href="#" class="hover:text-orange-400">{{comments}}</a></div>
+        <div class="my-8 border-b border-gray-200 "></div>
+        <p class="font-normal text-gray-500 leading-7">{{description}}</p>
+        <div class="my-8 border-b border-gray-200 "></div>
+        
+        <div class="flex justify-between">
+            <div class="flex">
+                <i class="fa fa-tags pt-1 text-orange-400"></i>
+                <div class="font-medium text-sm text-gray-400">      
+                    <a href="#" class="hover:text-orange-400 ml-2">{{tag1}}</a><span>, </span><a href="#" class="hover:text-orange-400">{{tag2}}</a>
+                </div>
+            </div>
+            <div class="flex">
+                <i class="fa fa-share-alt pt-1 text-orange-400"></i>
+                <div class="font-medium text-sm text-gray-400">        
+                    <a href="#" class="hover:text-orange-400 ml-2">{{tag4}}</a><span>, </span><a href="#">{{tag3}}</a>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>

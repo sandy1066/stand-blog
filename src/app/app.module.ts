@@ -1,7 +1,7 @@
 import { NgModule } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
-
 import { AppRoutingModule } from './app-routing.module';
+
 import { AppComponent } from './app.component';
 import { AboutUsComponent } from './modules/about-us/about-us.component';
 import { ContactUsComponent } from './modules/contact-us/contact-us.component';
@@ -25,6 +25,13 @@ import { PostSearchComponent } from './modules/shared/components/post-search/pos
 import { RecentPostComponent } from './modules/shared/components/recent-post/recent-post.component';
 import { TagCloudsComponent } from './modules/shared/components/tag-clouds/tag-clouds.component';
 import { TemplateBannerComponent } from './modules/shared/components/template-banner/template-banner.component';
+import { PageNotFoundComponent } from './modules/page-not-found/page-not-found.component';
+import { CategoriesItemComponent } from './modules/shared/components/categories/categories-item/categories-item.component';
+import { RecentPostItemComponent } from './modules/shared/components/recent-post/recent-post-item/recent-post-item.component';
+import { TagCloudsItemComponent } from './modules/shared/components/tag-clouds/tag-clouds-item/tag-clouds-item.component';
+import { CommentsItemComponent } from './modules/post-details/components/comments/comments-item/comments-item.component';
+import { PageNumberComponent } from './modules/blog-entries/page-number/page-number.component';
+import { PageNumberItemComponent } from './modules/blog-entries/page-number/page-number-item/page-number-item.component';
 
 @NgModule({
   declarations: [
@@ -51,6 +58,13 @@ import { TemplateBannerComponent } from './modules/shared/components/template-ba
     RecentPostComponent,
     TagCloudsComponent,
     TemplateBannerComponent,
+    PageNotFoundComponent,
+    CategoriesItemComponent,
+    RecentPostItemComponent,
+    TagCloudsItemComponent,
+    CommentsItemComponent,
+    PageNumberComponent,
+    PageNumberItemComponent,
   ],
   imports: [
     BrowserModule,

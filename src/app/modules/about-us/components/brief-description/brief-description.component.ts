@@ -1,4 +1,4 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, OnInit, Input } from '@angular/core';
 
 @Component({
   selector: 'app-brief-description',
@@ -12,4 +12,7 @@ export class BriefDescriptionComponent implements OnInit {
   ngOnInit(): void {
   }
 
+  @Input() heading:string;
+  @Input() text:string;
+ 
 }

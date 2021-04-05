@@ -1,5 +1,83 @@
-<div class="p-3 grid grid-cols-3 gap-3 w-full">
-    <app-carousel message="Fashion"></app-carousel>
-    <app-carousel message="Nature"></app-carousel>
-    <app-carousel message="Lifestyle"></app-carousel>
+<div class="p-3 grid grid-cols-3 gap-3 w-full object-cover">
+    <app-carousel 
+        style="background-image: url(./assets/banner-item-01.jpg);"
+        title="Fashion" 
+        message="Morbi Dapibus Condimentum"
+        user="Admin"
+        date="May 12, 2020"
+        comments="12 Comments">
+    </app-carousel>
+    <app-carousel 
+        style="background-image: url(./assets/banner-item-02.jpg);"
+        title="Nature" 
+        message="Donec Porttitor Aug At Velit"
+        user="Admin"
+        date="May 14, 2020"
+        comments="24 Comments">
+    </app-carousel>
+    <app-carousel
+        style="background-image: url(./assets/banner-item-03.jpg);"  
+        title="Lifestyle" 
+        message="Best HTML template on TemplateMo"
+        user="Admin"
+        date="May 16, 2020"
+        comments="36 Comments">
+    </app-carousel>
+    <!-- <app-carousel image="./assets/banner-item-01.jpg"></app-carousel> -->
+
+</div>
+
+<app-template-banner></app-template-banner>
+
+<div class="flex py-20">
+    <div class="pl-2.5 w-3/5 grid grid-cols-1 gap-10">
+        <app-post 
+            image="./assets/blog-post-01.jpg"
+            title="lifestyle"
+            heading="Best Template Website For HTML CSS"
+            user="Admin"
+            date="May 31,2020"
+            comments="12 Comments"
+            description="Stand Blog is a free HTML CSS template for your CMS theme. You can easily adapt or customize it for any kind of CMS or website builder. You are allowed to use it for your business. You are NOT allowed to re-distribute the template ZIP file on any template collection site for the download purpose. Contact TemplateMo for more info. Thank you."
+            tag1="Beauty"
+            tag2="Nature"
+            tag3="Facebook"
+            tag4="Twitter">
+        </app-post>
+        <app-post 
+            image="./assets/blog-post-01.jpg"
+            title="healthy"
+            heading="Etiam Id Diam Vitae Lorem Dictum"
+            user="Admin"
+            date="May 24,2020"
+            comments="36 Comments"
+            description="You can support us by contributing a little via PayPal. Please contact TemplateMo via Live Chat or Email. If you have any question or feedback about this template, feel free to talk to us. Also, you may check other CSS templates such as multi-page, resume, video, etc."
+            tag1="Best Template"
+            tag2="TemplateMo"
+            tag3="Facebook"
+            tag4="Twitter">
+        </app-post>
+        <app-post 
+            image="./assets/blog-post-01.jpg"
+            title="fashion"
+            heading="Donec Tincidunt Leo Nec Magna"
+            user="Admin"
+            date="May 14,2020"
+            comments="48 Comments"
+            description="Nullam at quam ut lacus aliquam tempor vel sed ipsum. Donec pellentesque tincidunt imperdiet. Mauris sit amet justo vulputate, cursus massa congue, vestibulum odio. Aenean elit nunc, gravida in erat sit amet, feugiat viverra leo. Phasellus interdum, diam commodo egestas rhoncus, turpis nisi consectetur nibh, in vehicula eros orci vel neque."
+            tag1="HTML CSS"
+            tag2="Photoshop"
+            tag3="Facebook"
+            tag4="Twitter">
+        </app-post>
+        <div><button class="w-4/5 float-right rounded-none bg-orange-400 h-16 hover:bg-orange-300">
+            <h2 class="uppercase py-2 px-4 text-white font-semibold text-sm ">view all posts</h2>
+        </button></div>
+    </div>
+    <div class="grid grid-cols-1 gap-12 pl-14 w-2/5 h-1/2 float-right">
+        <div><app-post-search></app-post-search></div>
+        <div><app-recent-post></app-recent-post></div>
+        <div><app-categories></app-categories></div>
+        <div><app-tag-clouds></app-tag-clouds></div>
+    </div>
 </div>

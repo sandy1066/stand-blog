@@ -6,7 +6,12 @@ module.exports = {
     extend: {
       colors: {
         orange: colors.orange,
-      }
+        footer: {DEFAULT: '#20232e'},
+        business: {DEFAULT: '#007bff'},
+      },
+      width: global.Object.assign({
+        'post': '48%',
+      },),
     },
   },
   variants: {
@@ -14,3 +19,5 @@ module.exports = {
   },
   plugins: [],
 }
+
+

@@ -12,7 +12,11 @@ export class CarouselComponent implements OnInit {
   ngOnInit(): void {
   }
 
-  // data="./assets/banner-item-01.jpg";
+  @Input() title: string;
   @Input() message: string;
+  @Input() user: string;
+  @Input() date: string;
+  @Input() comments: string;
+  // @Input() image: string;
 
 }

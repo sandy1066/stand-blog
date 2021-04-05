@@ -1,1 +1,37 @@
-<p>post-details works!</p>
+<div class="w-full h-80">
+    <app-module-banner 
+        title="POST DETAILS"
+        heading="SINGLE BLOG POST">
+    </app-module-banner>
+</div>
+
+<div class="my-6"><app-template-banner></app-template-banner></div>
+
+<div class="flex py-20">
+    <div class="pl-2.5 w-3/5 grid grid-cols-1 gap-10">
+        <app-post 
+            image="./assets/blog-post-02.jpg"
+            title="lifestyle"
+            heading="Aenean Pulvinar Gravida Sem Nec"
+            user="Admin"
+            date="May 12,2020"
+            comments="10 Comments"
+            description="You can browse different tags such as multi-page, resume, video, etc. to see more CSS templates. Sed hendrerit rutrum arcu, non malesuada nisi. Sed id facilisis turpis. Donec justo elit, dapibus vel ultricies in, molestie sit amet risus. In nunc augue, rhoncus sed libero et, tincidunt tempor nisl. Donec egestas, quam eu rutrum ultrices, sapien ante posuere nisl, ac eleifend eros orci vel ante. Pellentesque vitae eleifend velit. Etiam blandit felis sollicitudin vestibulum feugiat.
+            
+            Donec tincidunt leo nec magna gravida varius. Suspendisse felis orci, egestas ac sodales quis, venenatis et neque. Vivamus facilisis dignissim arcu et blandit. Maecenas finibus dui non pulvinar lacinia. Ut lacinia finibus lorem vel porttitor. Suspendisse et metus nec libero ultrices varius eget in risus. Cras id nibh at erat pulvinar malesuada et non ipsum. Suspendisse id ipsum leo."
+            tag1="Beauty"
+            tag2="Nature"
+            tag3="Facebook"
+            tag4="Twitter">
+        </app-post>
+
+        <app-comments></app-comments>
+        <app-your-comment></app-your-comment>
+    </div>
+    <div class="grid grid-cols-1 gap-12 pl-14 w-2/5 h-1/2 float-right">
+        <div><app-post-search></app-post-search></div>
+        <div><app-recent-post></app-recent-post></div>
+        <div><app-categories></app-categories></div>
+        <div><app-tag-clouds></app-tag-clouds></div>
+    </div>
+</div>
