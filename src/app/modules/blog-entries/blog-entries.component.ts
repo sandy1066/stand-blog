@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { UserServiceService } from 'src/app/user-service.service';
 
 @Component({
   selector: 'app-blog-entries',
@@ -7,9 +8,13 @@ import { Component, OnInit } from '@angular/core';
 })
 export class BlogEntriesComponent implements OnInit {
 
-  constructor() { }
+  data:any=[]
+  constructor(private user:UserServiceService) {}
 
   ngOnInit(): void {
+    this.user.getData().subscribe((data1: any | undefined) => {console.log(data1) 
+      this.data=data1
+      })
   }
 
 }

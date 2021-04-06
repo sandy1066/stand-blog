@@ -1,6 +1,7 @@
 import { NgModule } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
 import { AppRoutingModule } from './app-routing.module';
+import { HttpClientModule } from '@angular/common/http';
 
 import { AppComponent } from './app.component';
 import { AboutUsComponent } from './modules/about-us/about-us.component';
@@ -8,7 +9,6 @@ import { ContactUsComponent } from './modules/contact-us/contact-us.component';
 import { BlogEntriesComponent } from './modules/blog-entries/blog-entries.component';
 import { HomeComponent } from './modules/home/home.component';
 import { PostDetailsComponent } from './modules/post-details/post-details.component';
-import { AboutUsDetailComponent } from './modules/about-us/components/about-us-detail/about-us-detail.component';
 import { BriefDescriptionComponent } from './modules/about-us/components/brief-description/brief-description.component';
 import { AddressGeoMapComponent } from './modules/contact-us/components/address-geo-map/address-geo-map.component';
 import { ContactInformationComponent } from './modules/contact-us/components/contact-information/contact-information.component';
@@ -41,7 +41,6 @@ import { PageNumberItemComponent } from './modules/blog-entries/page-number/page
     BlogEntriesComponent,
     HomeComponent,
     PostDetailsComponent,
-    AboutUsDetailComponent,
     BriefDescriptionComponent,
     AddressGeoMapComponent,
     ContactInformationComponent,
@@ -68,7 +67,8 @@ import { PageNumberItemComponent } from './modules/blog-entries/page-number/page
   ],
   imports: [
     BrowserModule,
-    AppRoutingModule
+    AppRoutingModule,
+    HttpClientModule
   ],
   providers: [],
   bootstrap: [AppComponent]

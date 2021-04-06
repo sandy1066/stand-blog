@@ -10,19 +10,30 @@
 <div class="flex py-20">
     <div class="pl-2.5 w-3/5 grid grid-cols-1 gap-10">
         <app-post 
-            image="./assets/blog-post-02.jpg"
-            title="lifestyle"
-            heading="Aenean Pulvinar Gravida Sem Nec"
-            user="Admin"
-            date="May 12,2020"
-            comments="10 Comments"
-            description="You can browse different tags such as multi-page, resume, video, etc. to see more CSS templates. Sed hendrerit rutrum arcu, non malesuada nisi. Sed id facilisis turpis. Donec justo elit, dapibus vel ultricies in, molestie sit amet risus. In nunc augue, rhoncus sed libero et, tincidunt tempor nisl. Donec egestas, quam eu rutrum ultrices, sapien ante posuere nisl, ac eleifend eros orci vel ante. Pellentesque vitae eleifend velit. Etiam blandit felis sollicitudin vestibulum feugiat.
-            
-            Donec tincidunt leo nec magna gravida varius. Suspendisse felis orci, egestas ac sodales quis, venenatis et neque. Vivamus facilisis dignissim arcu et blandit. Maecenas finibus dui non pulvinar lacinia. Ut lacinia finibus lorem vel porttitor. Suspendisse et metus nec libero ultrices varius eget in risus. Cras id nibh at erat pulvinar malesuada et non ipsum. Suspendisse id ipsum leo."
-            tag1="Beauty"
-            tag2="Nature"
-            tag3="Facebook"
-            tag4="Twitter">
+            image="./assets/blog-post-02.jpg">
+                <h1>lifestyle</h1>
+                <h2>Aenean Pulvinar Gravida Sem Nec</h2>
+                <h3>Admin</h3>
+                <h4>May 12,2020</h4>
+                <h5>10 Comments</h5>
+                <p>You can browse different tags such as <a href="#" class="text-business hover:text-blue-700">multi-page</a>, <a href="#" class="text-business hover:text-blue-700">resume</a>, <a href="#" class="text-business hover:text-blue-700">video</a>, etc. to see more CSS templates. Sed hendrerit rutrum arcu, non malesuada nisi. Sed id facilisis turpis. Donec justo elit, dapibus vel ultricies in, molestie sit amet risus. In nunc augue, rhoncus sed libero et, tincidunt tempor nisl. Donec egestas, quam eu rutrum ultrices, sapien ante posuere nisl, ac eleifend eros orci vel ante. Pellentesque vitae eleifend velit. Etiam blandit felis sollicitudin vestibulum feugiat.
+                <br><br>
+                Donec tincidunt leo nec magna gravida varius. Suspendisse felis orci, egestas ac sodales quis, venenatis et neque. Vivamus facilisis dignissim arcu et blandit. Maecenas finibus dui non pulvinar lacinia. Ut lacinia finibus lorem vel porttitor. Suspendisse et metus nec libero ultrices varius eget in risus. Cras id nibh at erat pulvinar malesuada et non ipsum. Suspendisse id ipsum leo.</p>
+
+                <div class="flex justify-between">
+                    <div class="flex">
+                        <i class="fa fa-tags pt-1 text-orange-400"></i>
+                        <div class="font-medium text-sm text-gray-400">      
+                            <a href="#" class="hover:text-orange-400 ml-2">Beauty</a><span>, </span><a href="#" class="hover:text-orange-400">Nature</a>
+                        </div>
+                    </div>
+                    <div class="flex">
+                        <i class="fa fa-share-alt pt-1 text-orange-400"></i>
+                        <div class="font-medium text-sm text-gray-400">        
+                            <a href="#" class="hover:text-orange-400 ml-2">Facebook</a><span>, </span><a href="#" class="hover:text-orange-400">Twitter</a>
+                        </div>
+                    </div>
+                </div>
         </app-post>
 
         <app-comments></app-comments>
