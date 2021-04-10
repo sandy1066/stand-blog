@@ -10,7 +10,8 @@ module.exports = {
         business: {DEFAULT: '#007bff'},
       },
       width: global.Object.assign({
-        'post': '48%',
+        'w-35': '35%',
+        'w-65': '65%'
       },),
     },
   },

@@ -1,6 +1,6 @@
-<div class="w-4/5 float-right border border-gray-200">
-    <img [src]="image">
-    <div class="m-10">
+<div class="float-right border border-gray-200">
+    <ng-content select=".image"></ng-content>
+    <div class="m-8">
         <h2 class="uppercase text-orange-400 font-bold text-xl "><ng-content select="h1"></ng-content></h2>
         <div class="font-bold text-xl text-gray-800 leading-10"><a href="#"><ng-content select="h2"></ng-content></a></div>
         <div class="font-medium text-sm text-gray-400 flex gap-2"><a href="#" class="hover:text-orange-400"><ng-content select="h3"></ng-content></a> | <a href="#" class="hover:text-orange-400"><ng-content select="h4"></ng-content></a> | <a href="#" class="hover:text-orange-400"><ng-content select="h5"></ng-content></a></div>
@@ -12,5 +12,9 @@
         <ng-content></ng-content>
         <ng-content></ng-content>
         <ng-content></ng-content>
+
+        <div class="mt-6 flex justify-center"><button (click)="deletePost(indexElement)" class="flex justify-center rounded-none bg-orange-400 h-10 w-32 hover:bg-orange-300">
+            <h1 class="py-2 text-white font-semibold text-medium">Delete Post</h1>
+        </button></div>
     </div>
 </div>

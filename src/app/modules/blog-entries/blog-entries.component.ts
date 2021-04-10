@@ -8,13 +8,19 @@ import { UserServiceService } from 'src/app/user-service.service';
 })
 export class BlogEntriesComponent implements OnInit {
 
-  data:any=[]
+  public posts:any=[];
   constructor(private user:UserServiceService) {}
 
   ngOnInit(): void {
-    this.user.getData().subscribe((data1: any | undefined) => {console.log(data1) 
-      this.data=data1
+    this.user.getPosts().subscribe((posts: any) => {
+      console.log(posts) 
+      this.posts=posts
       })
+  }
+
+  recieveIndex(indexElement:any) {
+    this.posts.splice(indexElement,1)
+    console.log(indexElement)
   }
 
 }

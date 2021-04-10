@@ -8,9 +8,9 @@ export class UserServiceService {
 
   constructor( private http:HttpClient) { }
 
-  getData()
+  getPosts()
   {
-    let apiUrl="https://api.mocki.io/v1/24bc60c6";
+    let apiUrl="https://api.mocki.io/v1/ba2ea350";
     return this.http.get(apiUrl);
   }
 }

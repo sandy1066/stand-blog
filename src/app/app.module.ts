@@ -2,6 +2,8 @@ import { NgModule } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
 import { AppRoutingModule } from './app-routing.module';
 import { HttpClientModule } from '@angular/common/http';
+import { Ng2SearchPipeModule } from 'ng2-search-filter';
+import { FormsModule } from '@angular/forms';
 
 import { AppComponent } from './app.component';
 import { AboutUsComponent } from './modules/about-us/about-us.component';
@@ -27,7 +29,6 @@ import { TagCloudsComponent } from './modules/shared/components/tag-clouds/tag-c
 import { TemplateBannerComponent } from './modules/shared/components/template-banner/template-banner.component';
 import { PageNotFoundComponent } from './modules/page-not-found/page-not-found.component';
 import { CategoriesItemComponent } from './modules/shared/components/categories/categories-item/categories-item.component';
-import { RecentPostItemComponent } from './modules/shared/components/recent-post/recent-post-item/recent-post-item.component';
 import { TagCloudsItemComponent } from './modules/shared/components/tag-clouds/tag-clouds-item/tag-clouds-item.component';
 import { CommentsItemComponent } from './modules/post-details/components/comments/comments-item/comments-item.component';
 import { PageNumberComponent } from './modules/blog-entries/page-number/page-number.component';
@@ -59,7 +60,6 @@ import { PageNumberItemComponent } from './modules/blog-entries/page-number/page
     TemplateBannerComponent,
     PageNotFoundComponent,
     CategoriesItemComponent,
-    RecentPostItemComponent,
     TagCloudsItemComponent,
     CommentsItemComponent,
     PageNumberComponent,
@@ -68,7 +68,9 @@ import { PageNumberItemComponent } from './modules/blog-entries/page-number/page
   imports: [
     BrowserModule,
     AppRoutingModule,
-    HttpClientModule
+    HttpClientModule,
+    Ng2SearchPipeModule,
+    FormsModule
   ],
   providers: [],
   bootstrap: [AppComponent]
