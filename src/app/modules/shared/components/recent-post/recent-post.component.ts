@@ -20,15 +20,16 @@ export class RecentPostComponent implements OnInit {
       })
   }
 
-  recentPosts: any;
+  recentTitle: any;
   searchFunction(){
-    if(this.recentPosts == ""){
+    if(this.recentTitle == ""){
       this.ngOnInit();
     }
     else{
       this.posts1 = this.posts1.filter((res:any) => {
-        return res.recentPosts.toLocaleLowerCase().match(this.recentPosts.toLocaleLowerCase());
+        return res.recentPosts.toLocaleLowerCase().match(this.recentTitle.toLocaleLowerCase());
       })
+      console.log(this.recentTitle)
     }
   }
 
